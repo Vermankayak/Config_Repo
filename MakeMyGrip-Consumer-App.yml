@@ -1,8 +1,6 @@
 spring:
   application:
     name: MakeMyGrip-Consumer-App
-  profiles:
-    active: dev
   boot:
     admin:
       client:
