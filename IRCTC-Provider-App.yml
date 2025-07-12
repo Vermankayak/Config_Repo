@@ -1,8 +1,6 @@
 spring:
   application:
     name: IRCTC-Provider-App
-  profiles:
-    active: dev
   datasource:
     username: root
     password: nihar@123
