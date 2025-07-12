@@ -13,6 +13,8 @@ spring:
     admin:
       client:
         url: http://localhost:9090
+server:
+  port: 8085
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
