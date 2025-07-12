@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: IRCTC-Provider-App
+  profiles:
+    active: dev
+  datasource:
+    username: root
+    password: nihar@123
+    url: jdbc:mysql://localhost:3306/employee
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
